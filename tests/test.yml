@@ -1,0 +1,16 @@
+---
+- hosts: containers
+  gather_facts: no
+  roles:
+    - grafana
+  tasks:
+    - name: Install curl
+      apt:
+        name: curl
+    - name: Get Grafana version
+      shell: curl -s localhost:3000/login | grep span warn=no
+      register: grafana_version_result
+    - name: Assert Grafana version
+      assert:
+        that: grafana_version_result.stdout_lines[0] | regex_search('v[\d.]+') != ''
+        msg: "Failure on Grafana installation"
