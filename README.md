@@ -1,6 +1,6 @@
 # grafana
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/grafana.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/grafana.svg?branch=master)](https://travis-ci.org/codeyourinfra/grafana)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/grafana.svg)](https://github.com/codeyourinfra/grafana/releases/latest) [![Build status](https://travis-ci.org/codeyourinfra/grafana.svg?branch=master)](https://travis-ci.org/codeyourinfra/grafana) [![Ansible Role](https://img.shields.io/ansible/role/29402.svg)](https://galaxy.ansible.com/codeyourinfra/grafana) [![Ansible Role downloads](https://img.shields.io/ansible/role/d/29402.svg)](https://galaxy.ansible.com/codeyourinfra/grafana)
 
 Ansible role to install [Grafana](https://grafana.com).
 
