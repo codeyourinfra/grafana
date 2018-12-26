@@ -8,7 +8,7 @@
       apt:
         name: curl
     - name: Get Grafana version
-      shell: curl -s localhost:3000/login | grep span warn=no
+      shell: curl -s localhost:3000/login | grep span
       register: grafana_version_result
     - name: Assert Grafana version
       assert:
