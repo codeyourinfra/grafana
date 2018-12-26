@@ -14,4 +14,4 @@ def test_grafana_is_installed(host):
     cmd = host.run("curl -s localhost:3000/login | grep span")
     assert cmd.rc == 0
     pattern = re.compile("v[\\d.]+")
-    assert pattern.search(cmd.stdout) != None
+    assert pattern.search(cmd.stdout) is not None
